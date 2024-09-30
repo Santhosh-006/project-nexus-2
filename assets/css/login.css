@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("restaurant-bg.jpg") no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(to bottom right, #ff5100, #ffbb83);; */
+    position: absolute;
+}
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    filter: blur();
+    border: rgb(156, 156, 156) 1px solid;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 30px 0.2px rgb(59, 19, 0);
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;outline: none;
+    position: relative;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background-color: orangered;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.input-group{
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 15px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #ffffff;
+    color: white;
+    outline: none;
+    background:transparent;
+}
+.forgot{
+    text-decoration: none;
+    font-size: small;
+    text-align: right;
+    color: black;
+    margin: 5px;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    background-color: orangered;
+    border-radius: 30px;
+    border: none;
+}
+.submit-btn :hover{
+    background-color: rgb(185, 49, 0);
+}
+.checkbox{
+    margin: 3px;
+}
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 450px;
+}

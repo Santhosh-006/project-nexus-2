@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Tailwind CSS build files
+dist/
+build/
+
+# Lock files
+yarn.lock
+package-lock.json
+
+# Logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# VSCode settings
+.vscode/
+
+# Environmental variables
+.env

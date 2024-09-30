@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form action="" class="input-group" id="login">
+                <input type="email" class="input-field" placeholder="Email" id="emailLogin" required>
+                <input type="password" class="input-field" placeholder="Password" id="passwordLogin" required>
+                <a href="#" class="forgot">Forgot Password</a>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            <form action="" class="input-group" id="register">
+                <input type="text" class="input-field" placeholder="Username" id="nameRegister" required>
+                <input type="email" placeholder="abc@efg.com" class="input-field" id="emailRegister" required>
+                <input type="password" class="input-field" placeholder="Password" id="passwordRegister" required>
+                <label for="checkbox" class="checkbox-btn"><input type="checkbox" class="checkbox">I agree the terms and
+                    conditions</label>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        let loginEl = document.getElementById("login")
+        let regEl = document.getElementById("register")
+        let btn = document.getElementById("btn")
+
+        function register() {
+            loginEl.style.left = "-400px";
+            regEl.style.left = "50px";
+            btn.style.left = "110px";
+        }
+
+        function login() {
+            loginEl.style.left = "50px";
+            regEl.style.left = "450px";
+            btn.style.left = "0px";
+        }
+
+    </script>
+    <script type="module" src="./assets/js/login.js"></script>
+</body>
+
+</html>
